@@ -3,24 +3,31 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve -o",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "server": "json-server --watch ./src/assets/mocks/data.json"
+    "server": "json-server --watch ./src/assets/mocks/data.json",
+    "dev:local": "run-p  start server"
   },
   "private": true,
   "dependencies": {
+    "-": "0.0.1",
     "@angular/animations": "~9.1.4",
+    "@angular/cdk": "^9.2.2",
     "@angular/common": "~9.1.4",
     "@angular/compiler": "~9.1.4",
     "@angular/core": "~9.1.4",
     "@angular/forms": "~9.1.4",
+    "@angular/material": "^9.2.2",
     "@angular/platform-browser": "~9.1.4",
     "@angular/platform-browser-dynamic": "~9.1.4",
     "@angular/router": "~9.1.4",
+    "json-server": "^0.16.1",
+    "npm-run-all": "^4.1.5",
     "rxjs": "~6.5.4",
+    "save-dev": "0.0.1-security",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   },
