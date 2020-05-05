@@ -17,6 +17,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatNativeDateModule } from '@angular/material/core';
 
 @NgModule({
   declarations: [],
@@ -38,6 +39,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatPaginatorModule,
     MatProgressSpinnerModule,
     MatSelectModule,
+    MatNativeDateModule,
   ],
   exports: [
     MatMenuModule,
@@ -56,6 +58,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatPaginatorModule,
     MatProgressSpinnerModule,
     MatSelectModule,
+    MatNativeDateModule,
   ],
 })
 export class MaterialModule {}
