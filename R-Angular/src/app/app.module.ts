@@ -15,6 +15,8 @@ import { CourseComponent } from './course/course.component';
 import { CourseDialogComponent } from './course-dialog/course-dialog.component';
 import { CoursesCardListComponent } from './courses-card-list/courses-card-list.component';
 import { SafeurlPipe } from './pipes/safeurl.pipe';
+import { LoadingService } from './services/loading.service';
+import { MessageService } from './services/message.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +37,7 @@ import { SafeurlPipe } from './pipes/safeurl.pipe';
     ReactiveFormsModule,
     MaterialModule,
   ],
-  providers: [],
+  providers: [LoadingService, MessageService],
   bootstrap: [AppComponent],
   entryComponents: [CourseDialogComponent],
 })
